@@ -51,13 +51,20 @@ Também pode ser aplicado na organização de arquivos, registros e conjuntos de
 Sua complexidade de O(n log n) em todos os casos torna o algoritmo uma alternativa interessante quando se busca desempenho consistente, especialmente em operações envolvendo grandes quantidades de informações.
 
 TABELA DE COMPLEXIDADE
-Algoritmo	  Caso	      Tempo	      Espaço auxiliar
-Quick Sort	  Melhor	O(n log n)	      O(log n)
-Quick Sort	  Médio	    O(n log n)	      O(log n)
-Quick Sort	  Pior	      O(n²)	            O(n)
-Merge Sort	  Melhor	O(n log n)	        O(n)
-Merge Sort	  Médio	    O(n log n)	        O(n)
-Merge Sort	  Pior	    O(n log n)	        O(n)
+
+Algoritmo	        Caso	       Tempo	      Espaço auxiliar
+
+Quick Sort	     Melhor	     O(n log n)	        O(log n)
+
+Quick Sort	     Médio	     O(n log n)	        O(log n)
+
+Quick Sort	     Pior	          O(n²)	            O(n)
+
+Merge Sort	     Melhor	     O(n log n)	          O(n)
+
+Merge Sort	     Médio	     O(n log n)	          O(n)
+
+Merge Sort	     Pior	       O(n log n)	          O(n)
 
 PIOR CASO QUICK SORT 
 Ocorre quando as escolhas de pivô produzem partições muito desequilibradas, por exemplo, separando um elemento de todos os demais repetidamente. Isso pode acontecer com um vetor já ordenado quando se escolhe sempre o último elemento como pivô, como fazemos em nossa implementação.
