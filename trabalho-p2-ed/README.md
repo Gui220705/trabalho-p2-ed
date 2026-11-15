@@ -2,18 +2,23 @@ P2 - Estrutura de Dados
 
 IDENTIFICAÇÃO
 Guilherme da Silva Souza 
+
 RA: 2840482521030
+
 Tema: Quick Sort vs. Merge Sort
 
 LINK DO VÍDEO EXPLICATIVO:https://youtu.be/MgRSoGLzb70
 
+
 QUICK SORT
+
 O Quick Sort é um algoritmo de ordenação baseado na escolha de um elemento chamado pivô, utilizado como referência para dividir o vetor.
 Neste projeto, foi adotado o último elemento do intervalo como pivô.
 Durante a execução, os elementos menores ou iguais ao pivô são posicionados à sua esquerda, enquanto os maiores ficam à direita. Após essa divisão, o pivô ocupa sua posição definitiva no vetor.
 O processo é repetido recursivamente nos subvetores restantes até que todos os elementos estejam ordenados
 
 FUNCIONAMENTO
+
 1.	Selecionar o último elemento do intervalo como pivô.
 2.	Comparar os demais elementos com o pivô.
 3.	Posicionar os elementos menores ou iguais à sua esquerda.
@@ -21,15 +26,18 @@ FUNCIONAMENTO
 5.	Repetir o processo nos subvetores até concluir a ordenação.
 
 APLICAÇÃO NO MUNDO REAL 
+
 O Quick Sort é utilizado em sistemas que precisam organizar grandes conjuntos de dados de maneira eficiente. Pode ser aplicado em operações de ordenação de registros, listas de produtos, resultados de pesquisas e informações armazenadas em sistemas computacionais.
 Sua eficiência média de O(n log n) faz com que seja uma opção interessante em diferentes aplicações que necessitam de ordenação rápida. Entretanto, seu desempenho depende da escolha do pivô, podendo atingir O(n²) em situações desfavoráveis.
 
 MERGE SORT
+
 O Merge Sort é um algoritmo de ordenação que utiliza a divisão recursiva do vetor em partes menores.
 O processo continua até que cada subdivisão contenha apenas um elemento. Em seguida, os subvetores são intercalados de maneira ordenada, comparando seus elementos e reconstruindo o vetor original.
 Esse procedimento continua até que todos os elementos estejam reunidos em um único vetor ordenado.
 
 FUNCIONAMENTO
+
 1.	Dividir o vetor em duas partes.
 2.	Repetir a divisão recursivamente até obter subvetores unitários.
 3.	Comparar os elementos dos subvetores.
@@ -37,6 +45,7 @@ FUNCIONAMENTO
 5.	Repetir a intercalação até reconstruir o vetor completamente ordenado.
 
 APLICAÇÃO NO MUNDO REAL 
+
 O Merge Sort é utilizado em situações que exigem a ordenação eficiente de grandes volumes de dados. Uma de suas aplicações é a ordenação externa (External Sorting), utilizada quando os dados são grandes demais para serem armazenados integralmente na memória principal.
 Também pode ser aplicado na organização de arquivos, registros e conjuntos de dados que precisam ser ordenados de maneira previsível.
 Sua complexidade de O(n log n) em todos os casos torna o algoritmo uma alternativa interessante quando se busca desempenho consistente, especialmente em operações envolvendo grandes quantidades de informações.
