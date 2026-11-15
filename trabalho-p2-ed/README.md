@@ -53,86 +53,49 @@ Sua complexidade de O(n log n) em todos os casos torna o algoritmo uma alternati
 TABELA DE COMPLEXIDADE
 
  
+| Característica | Quick Sort | Merge Sort |
+|---|---|---|
+| Melhor caso | O(n log n) | O(n log n) |
+| Caso médio | O(n log n) | O(n log n) |
+| Pior caso | O(n²) | O(n log n) |
+| Espaço auxiliar | O(log n) médio | O(n) |
 
-Algoritmo 
 
-Caso 
 
-Tempo 
 
-Espaço auxiliar 
-
-Quick Sort 
-
-Melhor 
-
-O(n log n) 
-
-O(log n) 
-
-Quick Sort 
-
-Médio 
-
-O(n log n) 
-
-O(log n) 
-
-Quick Sort 
-
-Pior 
-
-O(n²) 
-
-O(n) 
-
-Merge Sort 
-
-Melhor 
-
-O(n log n) 
-
-O(n) 
-
-Merge Sort 
-
-Médio 
-
-O(n log n) 
-
-O(n) 
-
-Merge Sort 
-
-   Pior	 
-
-    O(n log n)	 
-
-O(n) 
 
 
 
 PIOR CASO QUICK SORT 
+
 Ocorre quando as escolhas de pivô produzem partições muito desequilibradas, por exemplo, separando um elemento de todos os demais repetidamente. Isso pode acontecer com um vetor já ordenado quando se escolhe sempre o último elemento como pivô, como fazemos em nossa implementação.
 
 PIOR CASO MERGE SORT 
+
 Não apresenta um pior caso de tempo assintótico diferente dos demais. Mesmo no pior cenário, continua dividindo o vetor em partes aproximadamente iguais e realizando a intercalação, mantendo O(n log n).
 
 DIÁRIO DE ENGENHARIA COM IA 
+
 FERRAMENTA DE IA:
+
 Durante o desenvolvimento do projeto, foi utilizada a ferramenta ChatGPT (GPT-6), da OpenAI, como apoio ao aprendizado dos algoritmos, implementação do simulador e identificação de problemas durante os testes.
 
 PRINCIPAIS PROMPTS 
+
 PROMPT 1 - PLANEJAMENTO DO SIMULADOR
+
 "Com base nos requisitos do trabalho P2 de Estruturas de Dados, desenvolva um simulador web para comparar Quick Sort e Merge Sort. Utilize HTML, CSS e JavaScript, mantendo a implementação Python como referência dos algoritmos. O simulador deve permitir visualizar a ordenação passo a passo, identificar pivôs, comparações, trocas e movimentações, além de apresentar estatísticas de execução e um cenário de pior caso para o Quick Sort."
 
 PROMPT 2 - DESENVOLVIMENTO DO CSS
+
 "Desenvolva uma folha de estilos CSS para o simulador de Quick Sort e Merge Sort, utilizando um tema escuro, interface organizada, botões destacados, painel de estatísticas, área de visualização das barras e cores distintas para representar pivô, comparações, trocas e elementos ordenados. Inclua também responsividade para telas menores."
 
 PROMPT 3 - DESENVOLVIMENTO DO SIMULADOR JAVASCRIPT
+
 "Desenvolva o JavaScript do simulador de Quick Sort e Merge Sort, implementando a execução passo a passo, animação das barras, identificação visual de pivôs, comparações e trocas, controles de execução e contadores de operações. Mantenha os mesmos critérios de instrumentação da implementação Python."
 
 PROBLEMA ENCONTRADO E AJUSTE MANUAL
+
 Durante os testes do simulador, foi identificado um problema na representação visual dos números negativos.
 Inicialmente, todas as barras eram desenhadas para cima, independentemente de seus valores serem positivos ou negativos. Isso fazia com que a representação visual não correspondesse corretamente aos valores armazenados no vetor.
 Para corrigir o problema, foi necessário ajustar manualmente a função renderizarBarras() no arquivo JavaScript e modificar o CSS da área de visualização.
